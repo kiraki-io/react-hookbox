@@ -18,7 +18,7 @@
     "@radix-ui/react-slot": "^1.2.2",
     "@radix-ui/react-tooltip": "^1.2.6",
     "@tailwindcss/postcss": "^4.1.7",
-    "@tanstack/react-query": "^5.76.1",
+    "@tanstack/react-query": "5.67.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.511.0",
@@ -28,6 +28,7 @@
     "react-dom": "^19.1.0",
     "tailwind-merge": "^3.3.0",
     "tailwindcss": "^4.1.7",
+    "@repo/data-query": "workspace:*",
     "usehooks-ts": "^3.1.1"
   },
   "devDependencies": {
