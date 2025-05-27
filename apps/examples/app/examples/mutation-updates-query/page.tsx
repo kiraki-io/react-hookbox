@@ -2,13 +2,12 @@
 
 import { Button } from '@/components/ui/button';
 import { CodeBlock } from '@/components/ui/code-block';
-
 import {
   createDataMutation,
   createDataQuery,
   useDataMutation,
   useDataQuery,
-} from '@repo/data-query/client';
+} from '@react-hookbox/data-query';
 
 export default function Page() {
   return (

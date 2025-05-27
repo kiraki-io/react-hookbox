@@ -1,8 +1,7 @@
 'use client';
 
 import { CodeBlock } from '@/components/ui/code-block';
-
-import { createDataMutation, useDataMutation } from '@repo/data-query/client';
+import { createDataMutation, useDataMutation } from '@react-hookbox/data-query';
 
 export default function Page() {
   return (

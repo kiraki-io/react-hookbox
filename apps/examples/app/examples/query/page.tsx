@@ -7,8 +7,7 @@ import { CodeBlock } from '@/components/ui/code-block';
 import { Input } from '@/components/ui/input';
 import { Separator } from '@/components/ui/separator';
 import { Skeleton } from '@/components/ui/skeleton';
-
-import { createDataQuery, useDataQuery } from '@repo/data-query/client';
+import { createDataQuery, useDataQuery } from '@react-hookbox/data-query';
 
 export default function Page() {
   const [id, setId] = useState('1');

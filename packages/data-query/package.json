@@ -1,14 +1,23 @@
 {
-  "name": "@repo/data-query",
-  "version": "0.0.0",
-  "private": true,
+  "name": "@react-hookbox/data-query",
+  "version": "0.1.0-beta",
+  "private": false,
   "type": "module",
+  "main": "./dist/client.js",
+  "types": "./dist/client.d.ts",
+  "files": [
+    "dist"
+  ],
   "exports": {
-    "./client": "./src/client.ts"
+    ".": {
+      "types": "./dist/client.d.ts",
+      "default": "./dist/client.js"
+    }
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "build": "tsc"
   },
   "dependencies": {
     "@tanstack/react-query": "5.67.1"
