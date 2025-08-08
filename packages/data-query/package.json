@@ -1,35 +1,37 @@
 {
   "name": "@react-hookbox/data-query",
-  "version": "0.1.0-beta",
+  "version": "0.1.0-beta.2",
   "private": false,
   "type": "module",
-  "main": "./dist/client.js",
-  "types": "./dist/client.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
   "exports": {
     ".": {
-      "types": "./dist/client.d.ts",
-      "default": "./dist/client.js"
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
     }
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
     "check-types": "tsc --noEmit",
-    "build": "tsc"
+    "clean": "rm -rf dist",
+    "build": "tsc",
+    "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "@tanstack/react-query": "5.67.1"
+    "@tanstack/react-query": "^5.84.0"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@types/node": "22.13.0",
-    "@types/react": "19.0.8",
-    "@types/react-dom": "19.0.3",
-    "eslint": "9.20.1",
-    "typescript-eslint": "8.23.0",
-    "typescript": "5.7.3"
+    "@types/node": "^22.13.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "eslint": "^9.21.0",
+    "typescript-eslint": "^8.23.0",
+    "typescript": "^5.8.0"
   }
 }

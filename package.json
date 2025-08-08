@@ -9,8 +9,8 @@
     "check-types": "turbo run check-types"
   },
   "devDependencies": {
-    "prettier": "^3.5.3",
-    "turbo": "^2.5.3",
+    "prettier": "3.6.2",
+    "turbo": "2.5.5",
     "typescript": "5.8.2",
     "@trivago/prettier-plugin-sort-imports": "5.2.2",
     "prettier-plugin-prisma": "5.0.0",
